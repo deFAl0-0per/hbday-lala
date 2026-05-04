@@ -258,9 +258,13 @@
     from { opacity: 0; transform: scale(0.96); }
     to   { opacity: 1; transform: scale(1); }
   }
+  @keyframes bgReveal {
+    0%   { filter: brightness(0) sepia(0); }
+    100% { filter: brightness(0.45) sepia(0.4); }
+  }
 
-  /* ===== BACKGROUND MOVEMENT ===== */
-  .bg-photo { animation: kenBurns 22s ease-in-out infinite; }
+  /* ===== BACKGROUND MOVEMENT + REVEAL ===== */
+  .bg-photo { animation: kenBurns 22s ease-in-out infinite, bgReveal 2.8s ease forwards; }
 
   /* ===== FRAME ENTRANCE ===== */
   .border-frame { animation: borderIn 1.4s ease 0.15s both; }
@@ -324,7 +328,7 @@
     </div>
     <p class="closing" style="margin-top:18px;">Kehadiranmu akan sangat berarti</p>
     <p class="pacar-saya">Undangan ini dibuat oleh pacar saya</p>
-    <p class="nama-pacar-saya">Raafa Ibra Ardhefran</p>
+    <p class="nama-pacar-saya">Raafa I.A.</p>
   </div>
 </div>
 
